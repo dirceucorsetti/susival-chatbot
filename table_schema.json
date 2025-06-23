@@ -1,0 +1,23 @@
+[
+    {
+      "tableName": "VIEW_BQ_VENDAS_UNIFICADAS",
+      "datasetName": "database_raw_data",
+      "description": "Vendas Unificadas da empresa Susival, considerando os dados do ERP da fábrica (MATRIZ) e da loja (FILIAL)",
+      "schema": [
+        { "name": "EMPRESA", "type": "STRING", "description": "Matriz ou Filial" },
+        { "name": "NF_NUMERO_SERIE", "type": "STRING", "description": "Número e Série da Nota Fiscal" },
+        { "name": "DATA_EMISSAO", "type": "DATE", "description": "Data de Emissão da Nota Fiscal" },
+        { "name": "CLIENTE", "type": "STRING", "description": "Descrição do Cliente" },
+        { "name": "CIDADE", "type": "STRING", "description": "Cidade do Cliente" },
+        { "name": "ITEM_DESCRICAO", "type": "STRING", "description": "Descrição do ítem comprado ou devolvido" },
+        { "name": "QTD", "type": "FLOAT64", "description": "Quantidade" },
+        { "name": "MEDIDA", "type": "STRING", "description": "Medida" },
+        { "name": "VALOR_UNITARIO", "type": "FLOAT64", "description": "Valor Unitário de cada item comprado ou devolvido" },
+        { "name": "VALOR_TOTAL", "type": "FLOAT64", "description": "Valor total" },
+        { "name": "VALOR_TOTAL_CALC", "type": "FLOAT64", "description": "Valor total considerando as devoluções como valores negativos" },
+        { "name": "REPRESENTANTE_VENDEDOR", "type": "STRING", "description": "Representante ou Vendedor responsável pela venda" },
+        { "name": "TIPO_OPERACAO", "type": "STRING", "description": "Tipo de Operação Fiscal Realizada" },
+        { "name": "DESCRICAO_CFOP_ITEM", "type": "STRING", "description": "Descrição do Tipo de Operação" }
+      ]
+    }
+  ]

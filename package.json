@@ -1,0 +1,13 @@
+{
+    "name": "bigquery-gemini-chatbot",
+    "version": "1.0.0",
+    "main": "index.js",
+    "engines": {
+      "node": "20.x"
+    },
+    "dependencies": {
+      "@google-cloud/bigquery": "^7.7.0",
+      "@google/genai": "^1.6.0"
+    }
+  }
+  
